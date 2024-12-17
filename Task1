@@ -33,4 +33,55 @@ public class personal {
         return address;
 }
 }
+}
+//welcome message
+public class JavaApplication132 {
+   public static void main(String[] args) {
+    System.out.println("Welcome to \"Object Oriented Programming\" in Java");
+    }
+}
+//sum of integers
+ public static void main(String[] args) {
+         sum s1 = new sum() ;
+         System.out.println(s1.getnum1());
+         System.out.println(s1.getnum2());
+         int result = s1.calculateSum(s1.num1,s1.num2);
+        System.out.println("The sum of " + s1.num1 + " and " + s1.num2 + " is: " + result);
+    }
+}
+public class sum {
+    int  num1 = 69;
+    int  num2 = 75;
+     public int getnum1(){
+         return num1;
+  }
+     public int getnum2(){
+         return num2;
+ }
+    public int calculateSum(int num1, int num2) {
+        return num1+ num2;
+    }
+}
+//primitives
+public static void main(String[] args) {
+         byte bytevalue = 127;
+     short shortvalue = 32000;
+     long longvalue = 92233555;
+    float floatvalue = 3.14f;
+    double doublevalue = 3.141592;
+    char charvalue = 'A';
+    boolean booleanvalue = true;
+    System.out.println("byte" + bytevalue);
+    System.out.println("short " + shortvalue);
+    System.out.println("long " + longvalue);
+    System.out.println("long " + longvalue);
+    System.out.println("float " + floatvalue);
+    System.out.println("double " + doublevalue);
+    System.out.println("char " + charvalue);
+    System.out.println("boolean" + booleanvalue);
+    }
+}
+//
+
+
     
