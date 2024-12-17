@@ -1,0 +1,36 @@
+
+    public static void main(String[] args) {
+        personal p1 = new personal();
+        System.out.println(p1.getname());
+         System.out.println(p1.getage());
+         
+       
+        System.out.println(p1.getemail());
+         System.out.println(p1.getaddress());
+         System.out.println(p1.qualification)
+    }
+    
+}
+public class personal {
+   
+    private String name = "eiza";
+    private int age = 20;
+    private String email = "eiza@gmail.com";
+    private String address = "pattoki";
+    String qualification = "BSGS"
+    
+    public String getname(){
+        return name;
+        
+    }
+    public int getage(){
+        return age;
+    }
+    public String getemail(){
+        return email;
+    }
+     public String getaddress(){
+        return address;
+}
+}
+    
