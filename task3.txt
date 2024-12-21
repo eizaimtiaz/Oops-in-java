@@ -1,0 +1,87 @@
+task 3
+//book class
+ public static void main(String[] args) {
+       Book b1 = new Book("aNNE LAMOTT","how to influence people",220);
+       System.out.println(b1.gettitle());
+       System.out.println(b1.getauthor());
+        System.out.println(b1.getprice());
+           
+       }
+    }
+public class Book {
+     private String author = "Scott";
+     private String title = "How to win friends";
+     private double price = 880;
+     
+     public Book(String author,String title, double price) {
+         this.author = author;
+         this.title = title;
+         this.price =  price;
+         
+     }
+
+      public String  gettitle(){
+        return title;
+    }
+        public String  getauthor(){
+        return author;
+    }
+        public double  getprice(){
+        return price;
+        
+}
+//rectangle
+  */
+    public static void main(String[] args) {
+        Rectangle r1 = new Rectangle(11,44);
+        System.out.println(r1.area());
+ }
+}
+public class Rectangle {
+    double length;
+    double width;
+    public Rectangle(double length,double width){
+        this.length = length;
+        this.width = width;
+    }
+    public double area(){
+        return length*width;
+    }
+ }
+//laptop
+public static void main(String[] args) {
+    laptop laptop = new laptop();
+ }
+ }
+public class laptop {
+    public laptop() {
+        System.out.println("Laptop is powered on.");
+    }
+    
+}
+//vehicle
+public class JavaApplication127 {
+
+    
+    public static void main(String[] args) {
+    vehicles v1 = new vehicles ("toyyota","corolla",2024);
+    System.out.println(v1.year);
+     System.out.println(v1.make);
+      System.out.println(v1.model);
+    }
+}
+public class vehicles {
+    String make;
+    String model;
+    int year;
+     public vehicles(String make, String model, int year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    }
+}
+
+
+
+
+        

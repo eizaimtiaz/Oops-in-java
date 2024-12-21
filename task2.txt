@@ -1,0 +1,104 @@
+public static void main(String[] args) {
+       Book b1 = new Book();
+       System.out.println(b1.gettitle());
+       System.out.println(b1.getauthor());
+        System.out.println(b1.getprice());
+           
+       }
+    }
+public class Book {
+     private String author = "Scott";
+     private String title = "How to win friends";
+     private double price = 880;
+    public String  gettitle(){
+        return title;
+    }
+        public String  getauthor(){
+        return author;
+    }
+        public double  getprice(){
+        return price;
+        
+}
+//vehicle
+public static void main(String[] args) {
+    vehicles v1 = new vehicles ("toyyota","corolla",2024);
+    System.out.println(v1.year);
+     System.out.println(v1.make);
+      System.out.println(v1.model);
+    }
+}
+public class vehicles {
+    String make;
+    String model;
+    int year;
+     public vehicles(String make, String model, int year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    }
+}
+//student detail
+ public static void main(String[] args) {
+       // student
+        student s1 = new student();
+        String y = "bro";
+        //s1.setname(x);
+         System.out.println(s1.getname());
+        System.out.println(s1.getage());
+        System.out.println(s1.getrollno());
+        
+    
+}
+}
+public class student {
+    private String name = "bro";
+    private int age = 18;
+    private int rollno = 22;
+     
+    public String getname(){
+        return name;
+        
+    }
+    public void setname(String x){
+        name = y;
+    }
+    public int getage(){
+        return age;
+    }
+    public int getrollno(){
+       return rollno;
+    }
+  
+    }
+//addition
+public static void main(String[] args) {
+        calculator c1 = new calculator();
+        double num1 = 20.5;
+        double num2 = 10.5;
+
+        // Performing calculations and displaying results
+        System.out.println("Addition: " + c1.add(num1, num2));
+        System.out.println("Subtraction: " + c1.subtract(num1, num2));
+        System.out.println("Multiplication: " + c1.multiply(num1, num2));
+      
+    }
+}
+public class calculator {
+    public double add(double num1, double num2) {
+        return num1 + num2;
+    }
+    public double subtract(double num1, double num2) {
+        return num1 - num2;
+    }
+    public double multiply(double num1, double num2) {
+        return num1 * num2;
+    }
+    
+    
+}
+    
+    
+
+
+        

@@ -1,0 +1,99 @@
+ task4
+public static void main(String[] args) {
+        Bank b1 = new Bank();
+         b1.deposit(45000);
+         System.out.println(b1.withdrawal());
+    }
+    
+}
+public class Bank {
+    private double balance;
+    
+    public double withdrawal(){
+        return balance;
+    }
+    public void deposit(double x){
+        balance = x;
+ }
+}
+//product
+public static void main(String[] args) {
+        Product p1 = new Product();
+        System.out.println(p1.getname());
+        System.out.println(p1.getid());
+        p1.set("Shampoo", 5, 120);
+
+        System.out.println(p1.getname());
+        System.out.println(p1.getid());
+    }
+    
+}
+public class Product {
+    private String name = "onyce";
+    private int id = 23;
+    private double price = 23400;
+    public String getname(){
+        return name;
+    }
+     public int getid(){
+        return id;
+    }
+     public void set(String x, int y, double z){
+         name = x;
+         id = y;
+         price = z;
+     }
+   }
+//bank details
+     Bank b1 = new Bank();
+         b1.deposit(85000);
+        
+         System.out.println(b1.withdrawal());
+         System.out.println(b1.accountno());
+  }
+ }
+public class Bank {
+    private double balance;
+    private int accountno = 122233366;
+    public int accountno(){
+        return accountno;
+    }
+    
+     public double withdrawal(){
+        return balance;
+    }
+    public void deposit(double x){
+        balance = x;
+  }
+  }
+//rectangle
+public class JavaApplication139 {
+    public static void main(String[] args) {
+        Rectangle r1 = new Rectangle();
+        double x = 14;
+        r1.setlength(x);
+        System.out.println(r1.getlength());
+        double y = 18;
+        r1.setwidth(y);
+        System.out.println(r1.getwidth());
+ }
+}
+public class Rectangle {
+    double length;
+    double width;
+ public void setlength(double x){
+        length = x;
+    }
+    public double getlength(){
+        return length;
+    }
+     public void setwidth(double y){
+        width = y;
+    }
+
+    public double getwidth(){
+        return width;
+    }
+}
+
+
