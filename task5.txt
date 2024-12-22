@@ -1,28 +1,9 @@
-public class Counter {
-	static int count;
-	Counter() {
-		count++;
-}
-	
-}
-public class MathConstant {
-	final double pi = 3.14159;
-}
-public class Library {
-	static String libraryName = "Eiza's Library";
 
-	public static void printlibraryName() {
-		System.out.println("Library Name: " + libraryName);
-	}
-}
-public class JavaApplication145 {
-
-   
-    public static void main(String[] args) {
+    
+public static void main(String[] args) {
       // question 1
         Counter c1 = new Counter();
-
-        System.out.println(Counter.count);
+       System.out.println(Counter.count);
 	Counter c2 = new Counter();
 	System.out.println(Counter.count);
 	Counter c3 = new Counter();
@@ -32,7 +13,6 @@ public class JavaApplication145 {
 		// question 2
 	MathConstant mc1 = new MathConstant();
 	int r = 3;
-		// calculating area by formula pi*radius*radius
 	double area = mc1.pi * r * r;
 	System.out.println("Area of the Circle is " + area);
 
@@ -41,7 +21,21 @@ public class JavaApplication145 {
         Library.printlibraryName();
    }
 }
+//class
 
-
-
-    
+public class Counter {
+	static int count;
+	Counter() {
+		count++;
+	}
+	
+}
+public class Library {
+	static String libraryName = "Eiza's Library";
+	public static void printlibraryName() {
+		System.out.println("Library Name: " + libraryName);
+	}
+}
+public class MathConstant {
+	final double pi = 3.14159;
+}
