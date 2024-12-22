@@ -83,5 +83,33 @@ public class Manager {
 }
 }
 //q4
+public class Car {
+      String brand;
+     String model;
+     int year;
+    public Car(String brand, String model, int year) {
+        this.brand = brand;
+        this.model = model;
+        this.year = year;
+    }
+    
+}
+public class Electric extends Car {
+        int batteryCapacity; 
+    public Electric(String brand, String model, int year, int batteryCapacity) {
+       super(brand, model, year);
+        this.batteryCapacity = batteryCapacity;
+ }
+}
+public static void main(String[] args) {
+    Car c1 = new Car ("honda","black",2023);
+    System.out.println(c1.brand);
+    System.out.println(c1.model);
+    System.out.println(c1.year);
+    Electric e1 = new Electric("Tesla", "S", 2022, 100);
+    System.out.println(e1.batteryCapacity);
+ }
+}
+
  
 
