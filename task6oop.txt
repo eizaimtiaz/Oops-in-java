@@ -1,0 +1,87 @@
+//q1
+public class Student {
+    String name;
+    int age;
+
+    public Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+  }
+public class Graduate extends Student {
+    String degree;
+
+    public Graduate(String name, int age, String degree) {
+        super(name, age); 
+        this.degree = degree;
+    }
+     public String getdegree(){
+            return degree;
+        }
+    }
+public static void main(String[] args) {
+    Student s1 = new Student ("harry",20);
+    System.out.println(s1.name);
+    System.out.println(s1.age);
+    Graduate g1  = new Graduate("Ali", 25, " Computer Science");
+     System.out.println(g1.getdegree());
+   
+}
+}
+
+
+//q2
+public class Animal {
+    public void speak() {
+        System.out.println("This animal makes a sound.");
+    }
+}
+ class Dog extends Animal {
+      public void speak() {
+        System.out.println("The dog barks");
+    }
+ }
+class Cat extends Animal {
+    public void speak() {
+        System.out.println("The cat meows: Meow! Meow!");
+    }
+}
+
+public static void main(String[] args) {
+        Animal myAnimal = new Animal();
+        myAnimal.speak();
+        Animal myDog = new Dog();
+        myDog.speak();
+        Animal myCat = new Cat();
+        myCat.speak();
+    }
+}
+//q3
+public class Employe {
+    String name;
+    double salary;
+    public  Employe(String name,double salary){
+        this.name = name;
+        this.salary = salary;
+    }
+  }
+public class Manager {
+    String department;
+ public Manager(String name, double salary, String department) {
+    this.department = department;
+  }
+ public String getdepartment(){
+            return department;
+        }
+    }
+ public static void main(String[] args) {
+       Employe e1 = new Employe("harry",60000);
+       System.out.println(e1.name);
+       System.out.println(e1.salary);
+      Manager m1 = new Manager("harry",60000,"BSCS");
+       System.out.println(m1.getdepartment());
+}
+}
+//q4
+ 
+
