@@ -1,0 +1,82 @@
+//q1
+public static void main(String[] args) {
+        Vehicle myCar = new Car();
+        Vehicle myBike = new Bike();
+
+        myCar.start();
+        myCar.stop();
+
+        myBike.start();
+        myBike.stop();
+    }
+}
+interface Vehicle {
+    void start();
+    void stop();
+}
+public class Car implements Vehicle {
+     @Override
+    public void start() {
+        System.out.println("The car is starting.");
+    }
+     @Override
+    public void stop() {
+        System.out.println("The car is stopping.");
+    }
+}
+public class Bike implements Vehicle {
+    @Override
+    public void start() {
+        System.out.println("The bike is starting.");
+    }
+
+    @Override
+    public void stop() {
+        System.out.println("The bike is stopping.");
+    }
+} 
+//q2
+public static void main(String[] args) {
+        Vehicle Car = new Car();
+        Car.move();
+        Vehicle bicycle = new Bicycle();
+        bicycle.move();
+    }
+  }
+abstract class Vehicle {
+     abstract void move();
+}
+public class Car extends Vehicle{
+    @Override
+    void move() {
+        System.out.println("The car moves on the road.");
+    }
+}
+public class Bicycle extends Vehicle{
+    @Override
+    void move() {
+        System.out.println("The bicycle moves on the path.");
+    }
+}
+//q3
+public static void main(String[] args) {
+        Drivable myTruck = new Truck();
+        myTruck.startEngine();
+        myTruck.stopEngine();
+        
+    }
+ }
+interface Drivable{
+        void startEngine();
+        void stopEngine();
+    }
+public class Truck implements Drivable {
+    //@Override//
+    public void startEngine() {
+        System.out.println("The engine is starting.");
+    }
+    //@Override//
+    public void stopEngine() {
+        System.out.println("The engine is stopping.");
+    }
+}
