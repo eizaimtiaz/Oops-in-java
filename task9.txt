@@ -1,0 +1,86 @@
+public class ComUniversity {
+
+    public static void main(String[] args) {
+        Student s1 = new Student();
+        String x = "bro";
+        s1.setname(x);
+         System.out.println(s1.getname());
+        System.out.println(s1.getage());
+        System.out.println(s1.getrollno());
+       
+ }
+ }
+public class Student {
+    private String name  ;
+    private int age =40 ;
+    private int rollno = 12 ;
+ 
+     
+   public String getname(){
+       
+       return name;
+        
+    }
+    public void setname(String x){
+        name = x;
+    }
+    public int getage(){
+        return age;
+    }
+    public int getrollno(){
+       return rollno;
+    }
+  
+    }
+//q2
+import com.school.teacher; 
+public class Mypack {
+   public static void main(String[] args) {
+        teacher teacher = new teacher("harry","RS");
+        System.out.println(teacher.getname());
+        System.out.println(teacher.getsubject());
+   }
+}
+package com.school;
+public class teacher {
+    
+    private String name;
+    private String subject;
+
+    public teacher(String name, String subject) {
+        this.name = name;
+        this.subject = subject;
+    }
+    public String getname(){
+        return name;
+    }
+    public String getsubject(){
+        return subject;
+    }
+    
+}
+//q3
+import com.finance.Bank;
+public class Mypack1 {
+    public static void main(String[] args) {
+         Bank b1 = new Bank(50000,"harry");
+         System.out.println(b1.getbalance());
+         System.out.println(b1.accholdername());
+    }
+}
+package com.finance;
+public class Bank {
+     double balance;
+     String accholdername;
+    public Bank (double balance, String accholdername){
+        this.balance = balance;
+        this.accholdername = accholdername;
+    }
+        public double getbalance(){
+        return balance;
+    }
+    public String accholdername(){
+        return accholdername;
+    }
+    
+}
