@@ -1,0 +1,93 @@
+ public static void main(String[] args) {
+        File myfile = new File();
+        if (myfile.exists()){
+     
+       int[] numbers = {1, 2, 3,4};
+
+        try {
+            // Accessing an invalid index
+            System.out.println(numbers[5]);
+        } 
+        catch (Exception e) {
+            System.out.println("some exception occured");
+        }
+
+        System.out.println("Program continues after handling the exception.");
+    }
+}
+}
+//q2
+public static void main(String[] args) {
+          Bank b1 = new Bank(50000,"harry");
+        System.out.println(b1.balance);
+        System.out.println(b1.accholdername);
+        b1.deposit(45000);
+        System.out.println(b1.getwithdrawal());
+    try {
+            Bank b2 = new Bank(1000.0, "john");
+            b2.deposit(500.0);   // Valid deposit
+            b2.getwithdrawal(); // Invalid withdrawal (insufficient funds)//
+        }
+    catch (Exception e) {
+            System.out.println(("no error"));
+            
+        }
+    }
+}
+public class Bank {
+     double balance;
+     String accholdername;
+    public Bank (double balance, String accholdername){
+        this.balance = balance;
+        this.accholdername = accholdername;
+ }
+      public double getwithdrawal(){
+        return balance;
+    }
+    public void deposit(double x){
+        balance = x;
+ }
+}
+//q3
+import java.util.Scanner;
+
+public class InputMismatchException {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        try {
+	System.out.println("Enter First Number :");
+	int x = input.nextInt();
+	System.out.println("Enter Second Number :");
+	int y = input.nextInt();
+	// storing answer to z variable
+	int z = x/y;
+	System.out.println("Result :" + z);
+}
+        catch (ArithmeticException e) {
+         System.out.println("Don't divide a number by ZERO! come'on!");
+        }
+    }
+}
+//q4
+import java.util.Scanner;
+public class JavaApplication185 {
+public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+        try {
+            System.out.println("You entered a positive number");
+            }
+       catch (Exception e) {
+            System.out.println("Error");
+        } finally {
+            scanner.close();
+        }
+    }
+}
+        
+
+
+        
+   
