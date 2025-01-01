@@ -1,0 +1,85 @@
+//q1
+import java.util.ArrayList;
+import java.util.HashSet;
+
+public class Task1 {
+    public static void main(String[] args) {
+
+        ArrayList<String> studentNames = new ArrayList<>();
+        
+        studentNames.add("Alice");
+        studentNames.add("Bob");
+        studentNames.add("Alice"); 
+        studentNames.add("Charlie");
+        
+        HashSet<String> uniqueNames = new HashSet<>(studentNames);
+        
+        System.out.println("Unique Student Names:");
+        for (String name : uniqueNames) {
+            System.out.println(name);
+        }
+    }
+}
+//q2
+import java.util.ArrayList;
+
+public class Task2 {
+    public static void main(String[] args) {
+        ArrayList<String> students = new ArrayList<>();
+        
+        // Adding 5 students
+        students.add("Alice");
+        students.add("Bob");
+        students.add("Charlie");
+        students.add("David");
+        students.add("Eve");
+        
+        // Displaying students
+        System.out.println("List of Students:");
+        for (String student : students) {
+            System.out.println(student);
+        }
+    }
+}
+//q3
+import java.util.HashMap;
+
+public class Task3 {
+    public static void main(String[] args) {
+        HashMap<Integer, String> studentMap = new HashMap<>();
+        
+        // Adding students
+        studentMap.put(1, "Alice");
+        studentMap.put(2, "Bob");
+        studentMap.put(3, "Charlie");
+        
+        // Retrieve by ID
+        int idToRetrieve = 2;
+        String studentName = studentMap.get(idToRetrieve);
+        
+        System.out.println("Student with ID " + idToRetrieve + ": " + studentName);
+    }
+}
+//q4
+import java.util.ArrayList;
+import java.util.HashSet;
+
+public class Task4 {
+    public static void main(String[] args) {
+        ArrayList<Integer> numbers = new ArrayList<>();
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(2); // Duplicate
+        numbers.add(3);
+        numbers.add(1); // Duplicate
+        
+        HashSet<Integer> uniqueNumbers = new HashSet<>(numbers);
+        
+        System.out.println("Unique Numbers:");
+        for (Integer number : uniqueNumbers) {
+            System.out.println(number);
+        }
+    }
+}
+
+
